@@ -1,0 +1,16 @@
+<h3>HERE ARE YOUR COUPONS!</h3>
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <% @all_coupons.each do |coupon| %>
+      ​
+        <li>
+          <%= coupon.description %> until <%= coupon.expiration_date %>
+        </li>
+      ​
+        <% end %>
+
+
+      </div>
+    </div>
+</div>
